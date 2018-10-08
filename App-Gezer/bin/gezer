@@ -13,6 +13,17 @@ __END__
 
 gezer - HTML Postprocessor and frontend to html-minifier
 
+=head1 SYNOPSIS
+
+    find dest/pre-incs/t2 -name '*.html' -o -name '*.xhtml' | \
+        perl -lpe 's=\A(?:./)?dest/pre-incs/t2/?==' | \
+        APPLY_TEXTS=1 xargs gezer --mode=minify \
+        --minifier-conf=bin/html-min-cli-config-file.conf \
+        --texts-dir=lib/ads \
+        --source-dir=dest/pre-incs/t2 \
+        --dest-dir=dest/post-incs/t2 \
+        --
+
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2018 by Shlomi Fish
