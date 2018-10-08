@@ -246,6 +246,13 @@ __END__
 
 Run the app using the @ARGV array as command line args.
 
+=head1 About the name
+
+Gezer is the Hebrew word for "a carrot" (see
+L<https://he.wikipedia.org/wiki/%D7%92%D7%96%D7%A8> ) and it is also
+the name of L<an archaeological site|https://en.wikipedia.org/wiki/Gezer>.
+I happened to eat a carrot when looking for a name for this app.
+
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2018 by Shlomi Fish
