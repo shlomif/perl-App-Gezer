@@ -24,6 +24,11 @@ gezer - HTML Postprocessor and frontend to html-minifier
         --dest-dir=dest/post-incs/t2 \
         --
 
+=head1 REQUIREMENTS
+
+L<https://github.com/kangax/html-minifier> (written in Node.js) must be
+in the path.
+
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2018 by Shlomi Fish
