@@ -224,6 +224,12 @@ s#\s*(</?(?:body|(?:br /)|div|head|li|ol|p|title|ul)>)\s*#$1#gms;
                 $cb );
         }
     }
+    foreach my $rec (@raw_filenames)
+    {
+        my $temp_bn = $rec->{temp_bn};
+        $_proc_dir->child($temp_bn)
+            ->spew_raw( $temp_dir->child($temp_bn)->slurp_raw );
+    }
     foreach my $rec ( @filenames, @ad_filenames, @raw_filenames )
     {
         my $d = path("$dest_dir/$rec->{bn}");
@@ -239,6 +245,10 @@ s#\s*(</?(?:body|(?:br /)|div|head|li|ol|p|title|ul)>)\s*#$1#gms;
 1;
 
 __END__
+
+=head1 NAME
+
+App::Gezer - HTML Postprocessor and frontend to html-minifier .
 
 =head1 METHODS
 
