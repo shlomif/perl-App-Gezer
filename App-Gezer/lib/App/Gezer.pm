@@ -15,7 +15,7 @@ use Data::Munge qw/ list2re /;
 use File::Update qw/ modify_on_change write_on_change /;
 use Path::Tiny qw/ path /;
 
-has '_minifier_conf_fn' => ( is => 'rw', );
+has '_minifier_conf_fn'          => ( is => 'rw', );
 has [ '_temp_dir', '_proc_dir' ] => ( is => 'rw', );
 
 my $XMLNS_NEEDLE = <<'EOF';
