@@ -1,0 +1,13 @@
+This archive contains the distribution App-Gezer:
+
+HTML Postprocessor and frontend to html-minifier (see
+https://github.com/j9t/html-minifier-next
+). You can find it on CPAN on:
+
+https://metacpan.org/dist/App-Gezer
+
+This software is Copyright (c) 2018 by Shlomi Fish.
+
+This is free software, licensed under:
+
+The MIT (Expat) License
